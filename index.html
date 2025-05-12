@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Programming Tutor - AI & Game Development</title>
+    <style>
+        body {
+          font-family: 'Comic Sans MS', cursive, sans-serif;
+          background: linear-gradient(to right, #e0f7fa, #fce4ec);
+          color: #004d40;
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+        }
+        header {
+          background: #00acc1;
+          color: white;
+          padding: 2rem;
+          text-align: center;
+          animation: bounceIn 1s ease-in-out;
+          position: relative;
+        }
+        header h1 {
+          margin: 0;
+          font-size: 2.5rem;
+        }
+        .speech-bubble {
+          position: absolute;
+          top: 10px;
+          right: 90px;
+          background: white;
+          padding: 10px 15px;
+          border-radius: 15px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.2);
+          color: #004d40;
+          font-size: 0.9rem;
+          animation: fadeInUp 1.5s ease-in-out;
+        }
+        .content {
+          padding: 2rem;
+          max-width: 800px;
+          margin: auto;
+          animation: fadeInUp 1.5s ease-in-out;
+        }
+        .content h2 {
+          color: #00796b;
+        }
+        .features ul {
+          list-style: none;
+          padding-left: 0;
+        }
+        .features li {
+          background: url('https://cdn.pixabay.com/photo/2013/07/12/12/58/star-146842_960_720.png') no-repeat left center;
+          background-size: 20px 20px;
+          padding-left: 30px;
+          margin-bottom: 10px;
+          transition: transform 0.2s;
+        }
+        .features li:hover {
+          transform: scale(1.1);
+        }
+        .contact {
+          margin-top: 2rem;
+          padding: 1rem;
+          background: #b2dfdb;
+          border-radius: 0.5rem;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact strong {
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+        .cartoon, .character, .extra {
+          position: absolute;
+          top: -20px;
+          width: 60px;
+          animation: float 3s ease-in-out infinite;
+        }
+        .character {
+          left: 20px;
+        }
+        .cartoon {
+          right: 20px;
+        }
+        .extra {
+          top: 250px;
+          left: 70%;
+          width: 50px;
+        }
+        .animation-boxes {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 2rem;
+        }
+        .box {
+          width: 120px;
+          height: 120px;
+          border-radius: 10px;
+          background-color: #ffccbc;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          color: #d84315;
+          animation: wiggle 2s infinite;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        @keyframes bounceIn {
+          0% { transform: scale(0.9); opacity: 0; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+        @keyframes wiggle {
+          0%, 100% { transform: rotate(-3deg); }
+          50% { transform: rotate(3deg); }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Computer Programming Tutor</h1>
+    <p><strong>AI & Game Development</strong></p>
+    <p>By Chris Ko</p>
+    <img src="piece.png" alt="Floating star" class="extra">
+</header>
+<section class="content">
+    <h2>For Kids & Youth</h2>
+    <p>No prior knowledge required. Flexible to all levels!</p>
+    <div class="features">
+        <h2>What You’ll Learn</h2>
+        <ul>
+            <li>Fun, hands-on projects combining knowledge and skills</li>
+            <li>Introduction to AI and Game Development</li>
+            <li>Emphasis on problem-solving and self-learning</li>
+        </ul>
+    </div>
+    <div class="animation-boxes">
+        <div class="box">Create</div>
+        <div class="box">Play</div>
+        <div class="box">Learn</div>
+    </div>
+    <div class="contact">
+        <strong>Chris Ko</strong>
+        <p>Game industry experience with games played by millions</p>
+        <p>Email: <a href="mailto:mtsnotes21@gmail.com">mtsnotes21@gmail.com</a></p>
+    </div>
+</section>
+</body>
+</html>
